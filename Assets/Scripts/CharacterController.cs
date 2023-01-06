@@ -30,14 +30,7 @@ public class CharacterController : MonoBehaviour
         animator.SetFloat("Horizontal",horizontal);
         animator.SetFloat("Vertical", vertical);
 
-        if (motionVector.x > 0)
-        {
-            transform.localScale = new Vector2(-1f, 1f);
-        }
-        else if (motionVector.x < 0)
-        {
-            transform.localScale = new Vector2(1f, 1f);
-        }
+        
 
 
         moving = horizontal != 0 || vertical != 0;
