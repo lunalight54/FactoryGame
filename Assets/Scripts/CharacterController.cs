@@ -9,7 +9,9 @@ public class CharacterController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     [SerializeField] float speed = 2f;
     Vector2 motionVector;
+    public Vector2 lastMotionVector;
     Animator animator;
+    public bool moving;
 
     void Awake()
     {
@@ -19,12 +21,14 @@ public class CharacterController : MonoBehaviour
 
     private void Update()
     {
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
         motionVector = new Vector2(
-            Input.GetAxisRaw("Horizontal"),
-            Input.GetAxisRaw("Vertical")
+            horizontal,
+            vertical
             );
-        animator.SetFloat("Horizontal", Input.GetAxisRaw("Horizontal"));
-        animator.SetFloat("Vertical", Input.GetAxisRaw("Vertical"));
+        animator.SetFloat("Horizontal",horizontal);
+        animator.SetFloat("Vertical", vertical);
 
         if (motionVector.x > 0)
         {
@@ -33,6 +37,17 @@ public class CharacterController : MonoBehaviour
         else if (motionVector.x < 0)
         {
             transform.localScale = new Vector2(1f, 1f);
+        }
+
+
+        moving = horizontal != 0 || vertical != 0;
+        animator.SetBool("moving", moving);
+
+        if (horizontal != 0 || vertical != 0)
+        {
+            lastMotionVector = new Vector2(horizontal, vertical).normalized;
+            animator.SetFloat("lastHorizontal", horizontal);
+            animator.SetFloat("lastVertical", vertical);
         }
     }
 
