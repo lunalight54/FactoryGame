@@ -1,1 +1,2 @@
 To fix bag with right walk + up or down: mirror images connected with right_walk animation
+drop items - go to gameManager->Item spawn manager you see rock_item in pick up prefab. it is not universal

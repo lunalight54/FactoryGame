@@ -9,10 +9,19 @@ public class PickUpItem : MonoBehaviour
     [SerializeField] private float speed = 5f;
     [SerializeField] private float pickUpDistance = 1.5f;
     [SerializeField] private float ttl = 10f;
-
+    public Item item;
+    public int count = 1;
     private void Awake()
     {
         playerTransform = GameManager.instance.player.transform;
+    }
+
+    public void Set(Item item, int count)
+    {
+        this.item = item;
+        this.count = count;
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        renderer.sprite = item.icon;
     }
 
     private void Update()
@@ -34,7 +43,16 @@ public class PickUpItem : MonoBehaviour
             speed * Time.deltaTime);
         
         if (distance < 0.1f)
-        {
+        {   
+            //*TODO* Should be added into specified controller rather than being checked here.
+            if (GameManager.instance.itemContainer != null)
+            {
+                GameManager.instance.itemContainer.Add(item, count);
+            }
+            else
+            {
+                Debug.LogWarning("No inventory container attached to the game manager");
+            }
             Destroy(gameObject);
         }
     }

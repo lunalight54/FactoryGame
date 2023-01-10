@@ -10,7 +10,10 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        Debug.LogWarning("Game manager is created");
     }
 
     public GameObject player;
+    public ItemContainer itemContainer;
+    public ItemDragAndDropController itemDragAndDropController;
 }
