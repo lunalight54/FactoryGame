@@ -62,4 +62,48 @@ public class ItemContainer : ScriptableObject
             }
         }
     }
+    public void Remove(Item itemToRemove, int count = 1)
+    {
+        if (itemToRemove.stackable)
+        {
+            ItemSlot itemSlot = slots.Find(x => x.item == itemToRemove);
+            if (itemSlot == null) { return;  }
+
+            itemSlot.count -= count;
+            if (itemSlot.count <= 0)
+            {
+                itemSlot.Clear();
+            }
+        }
+        else
+        {
+            while (count > 0)
+            {
+                count -= 1;
+                ItemSlot itemSlot = slots.Find(x => x.item == itemToRemove);
+                if (itemSlot == null) { return; }
+
+                itemSlot.Clear();
+            }
+        }
+    }
+    internal bool CheckItem(ItemSlot checkingItem)
+    {
+        ItemSlot itemSlot = slots.Find(x => x.item == checkingItem.item);
+        if (itemSlot == null) { return false;  }
+        if (checkingItem.item.stackable) { return itemSlot.count >= checkingItem.count; }
+        return true;
+    }
+
+    internal bool FreeSpace()
+    {
+        for (int i = 0; i< slots.Count; i++)
+        {
+            if (slots[i].item == null)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }

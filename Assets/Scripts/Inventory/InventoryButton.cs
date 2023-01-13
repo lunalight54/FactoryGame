@@ -41,8 +41,7 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        ItemContainer itemContainer = GameManager.instance.itemContainer;
-        GameManager.instance.itemDragAndDropController.OnClick(itemContainer.slots[myIndex]);
-        transform.parent.GetComponent<InventoryPanel>().Show();
+        ItemPanel itemPanel = transform.parent.GetComponent<ItemPanel>();
+        itemPanel.OnClick(myIndex);
     }
 }

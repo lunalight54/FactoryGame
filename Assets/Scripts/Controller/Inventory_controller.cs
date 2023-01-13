@@ -5,13 +5,15 @@ using UnityEngine;
 
 public class Inventory_controller : MonoBehaviour
 {
-   [SerializeField] private GameObject panel;
+   [SerializeField] private GameObject Itempanel;
+   [SerializeField] private GameObject Craftpanel;
 
-   private void Update()
+    private void Update()
    {
       if (Input.GetKeyDown(KeyCode.I))
       {
-         panel.SetActive(!panel.activeInHierarchy);
+         Itempanel.SetActive(!Itempanel.activeInHierarchy);
+         Craftpanel.SetActive(!Craftpanel.activeInHierarchy);
       }
    }
 }
