@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5080b42f1134200448bf2da2d9c9f6ca
+guid: 9128d984e212efb489b8fbf6f625c93d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TreeLog
+      name: stick_Icon
       rect:
         serializedVersion: 2
-        x: 49
-        y: 480
-        width: 46
-        height: 16
+        x: 193
+        y: 352
+        width: 32
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e45f731ce51e1754bb046cd45cb51f2e
-      internalID: -528002862
+      spriteID: 5a1f5803d6e09e8468fa0b67f4a4cab9
+      internalID: 141852829
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TreeLog: -528002862
+      stick_Icon: 141852829
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

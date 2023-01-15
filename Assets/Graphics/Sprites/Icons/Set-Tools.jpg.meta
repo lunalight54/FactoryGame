@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5080b42f1134200448bf2da2d9c9f6ca
+guid: b71e1560086053c439fb59695b733382
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,22 +117,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TreeLog
+      name: Wood_pickaxe
       rect:
         serializedVersion: 2
-        x: 49
-        y: 480
-        width: 46
-        height: 16
+        x: 48
+        y: 143
+        width: 24
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e45f731ce51e1754bb046cd45cb51f2e
-      internalID: -528002862
+      spriteID: a8870466090dd8641898b30bb679b5fe
+      internalID: -1435505148
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TreeLog: -528002862
+      Wood_pickaxe: -1435505148
+      Set-Tools_0: 1110588027
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

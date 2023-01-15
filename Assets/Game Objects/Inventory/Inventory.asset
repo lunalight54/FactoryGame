@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slots:
   - item: {fileID: 11400000, guid: 9313d1d8e6233ff42a7fe43f23c12c48, type: 2}
-    count: 100
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
+    count: 16
+  - item: {fileID: 11400000, guid: 6c45c40c93dd43043b8b19b7337b54c2, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: 49d304b1d5dada746a25735f9e9be9d7, type: 2}
     count: 0
   - item: {fileID: 0}
     count: 0

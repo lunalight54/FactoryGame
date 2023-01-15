@@ -5,22 +5,32 @@ using UnityEngine;
 
 public class ToolbarController : MonoBehaviour
 {
-    [SerializeField] int toolbarSize = 9;
+    [SerializeField] int toolbarSize = 12;
     int selectedTool;
 
     public Action<int> onChange;
 
+    public Item GetItem
+    {
+        get
+        {
+            return GameManager.instance.itemContainer.slots[selectedTool].item;
+        }
+    }
+
+
     private void Update()
     {
         float delta = Input.mouseScrollDelta.y;
-        if (delta != 0) 
+        if (delta != 0)
         {
             if (delta > 0)
             {
                 selectedTool += 1;
-                selectedTool = (selectedTool >= toolbarSize ? 0 : selectedTool);  
+                selectedTool = (selectedTool >= toolbarSize ? 0 : selectedTool);
             }
-            else {
+            else
+            {
                 selectedTool -= 1;
                 selectedTool = (selectedTool <= 0 ? toolbarSize - 1 : selectedTool);
             }

@@ -8,46 +8,61 @@ public class ToolsCharacterController : MonoBehaviour
 {
     CharacterController character;
     Rigidbody2D rgbd2d;
+    ToolbarController toolbarController;
     [SerializeField] float offsetDistance = 1f;
-    [SerializeField] float sizeOfInteractableArea = 1.2f;
+    //[SerializeField] float sizeOfInteractableArea = 1.2f;
     [SerializeField] MarkerManager markerManager;
     [SerializeField] TileMapReadController tileMapReadcontroller;
+    [SerializeField] float maxDistance = 1.5f;
+
+    Vector3Int selectedTilePosition;
+    bool selectable;
 
     private void Awake()
     {
         character = GetComponent<CharacterController>();
         rgbd2d = GetComponent<Rigidbody2D>();
+        toolbarController = GetComponent<ToolbarController>();
     }
-
     private void Update()
     {
+        SelectTile();
+        CanSelectCheck();
         Marker();
         if (Input.GetMouseButtonDown(0))
         {
-            UseTool();
+            if (UseToolWorld() == true)
+            {
+                return;
+            }
+            //else UseToolGrid not implemented
         }
     }
-
+    private void SelectTile()
+    {
+        selectedTilePosition = tileMapReadcontroller.GetGridPosition(Input.mousePosition, true);
+    }
+    void CanSelectCheck()
+    {
+        Vector2 characterPosition = transform.position;
+        Vector2 cameraPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        selectable = Vector2.Distance(characterPosition, cameraPosition) < maxDistance;
+        markerManager.Show(selectable);
+    }
     private void Marker()
     {
-        Vector3Int gridPosition = tileMapReadcontroller.GetGridPosition(Input.mousePosition, true);
-        markerManager.markedCellPosition = gridPosition;
+        markerManager.markedCellPosition = selectedTilePosition;
     }
 
-    private void UseTool()
+    private bool UseToolWorld()
     {
         Vector2 position = rgbd2d.position + character.lastMotionVector * offsetDistance;
 
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
+        Item item = toolbarController.GetItem;
+        if (item == null) { return false; }
+        if (item.onAction == null) { return false; }
+        bool complete = item.onAction.OnApply(position);
 
-        foreach (Collider2D c in colliders)
-        {
-            ToolHit hit = c.GetComponent<ToolHit>();
-            if (hit != null)
-            {
-                hit.Hit();
-                break;
-            }
-        }
+        return complete;
     }
 }
