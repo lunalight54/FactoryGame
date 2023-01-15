@@ -10,5 +10,6 @@ public class InventoryPanel : ItemPanel
     {
         GameManager.instance.itemDragAndDropController.OnClick(itemContainer.slots[id]);
         Show();
+        
     }
 }

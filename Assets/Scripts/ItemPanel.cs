@@ -19,7 +19,7 @@ public class ItemPanel : MonoBehaviour
 
     private void SetIndex()
     {
-        for (int i = 0; i < buttons.Count; i++)
+        for (int i = 0; i < buttons.Count ; i++)
         {
             buttons[i].SetIndex(i);
         }
@@ -32,7 +32,7 @@ public class ItemPanel : MonoBehaviour
 
     public virtual void Show()
     {
-        for (int i = 0; i < itemContainer.slots.Count; i++)
+        for (int i = 0; i < itemContainer.slots.Count && i<buttons.Count; i++)
         {
             if (itemContainer.slots[i].item == null)
             {
@@ -46,6 +46,6 @@ public class ItemPanel : MonoBehaviour
     }
     public virtual void OnClick(int id)
     {
-
+        
     }
 }

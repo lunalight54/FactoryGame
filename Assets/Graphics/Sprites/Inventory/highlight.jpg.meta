@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 721d0437a60c6a14ab8225624edf85e3
+guid: b49de38e1a16ca6468ab2776ece5be0e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,64 +117,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: main_inventory
+      name: highlight_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 236
-        width: 328
-        height: 112
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f8cb58e6a275534194d9cf55b3413b6
-      internalID: -347463492
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toolbar
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 188
-        width: 328
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f1fd6bc201c9ae47a17f49197f85895
-      internalID: 791647485
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: highlight
-      rect:
-        serializedVersion: 2
-        x: 291
-        y: 410
+        x: 358
+        y: 491
         width: 27
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 436ab6e9b0044a8499a9447571557b48
-      internalID: -1843858523
+      spriteID: 816adbabeff4fa14081beb0c8933f620
+      internalID: 1899610542
       vertices: []
       indices: 
       edges: []
@@ -190,9 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      toolbar: 791647485
-      highlight: -1843858523
-      main_inventory: -347463492
+      highlight_0: 1899610542
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
