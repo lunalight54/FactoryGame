@@ -5,7 +5,8 @@ using UnityEngine;
 public enum ResourceNodeType
 {
     Tree,
-    Rock
+    Rock,
+    Bronze
 }
 
 [CreateAssetMenu(menuName = "Data/ToolAction/Gather Resource Node")]

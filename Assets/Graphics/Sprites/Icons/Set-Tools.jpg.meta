@@ -137,6 +137,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: StonePickaxe
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 143
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0b00eaa9484bd4f8ccedf185112c81
+      internalID: 180761744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -149,7 +170,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Wood_pickaxe: -1435505148
-      Set-Tools_0: 1110588027
+      StonePickaxe: 1110588027
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

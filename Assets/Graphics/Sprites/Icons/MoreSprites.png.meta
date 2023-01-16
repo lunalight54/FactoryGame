@@ -125,7 +125,7 @@ TextureImporter:
         width: 62
         height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -133,6 +133,48 @@ TextureImporter:
       bones: []
       spriteID: 388aa882acdcc8141993c7739a86a7eb
       internalID: 1776380305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CopperNode
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 417
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0b0812d146028479abb4c04a6f836e
+      internalID: -202516111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnSmeltedBronze
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 198
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a0570ec207aa741b1d0dbaa4ed41aa
+      internalID: -1365061420
       vertices: []
       indices: 
       edges: []
@@ -149,6 +191,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       furnaceIcon: 1776380305
+      CopperNode: -202516111
+      UnSmeltedBronze: -1365061420
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
