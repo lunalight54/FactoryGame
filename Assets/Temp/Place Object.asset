@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f838e39139982241b3545959f03b313, type: 3}
-  m_Name: Furnace
+  m_Script: {fileID: 11500000, guid: 1568d55547303cf4d83b3689bdb95ce9, type: 3}
+  m_Name: Place Object
   m_EditorClassIdentifier: 
-  Name: Furnace
-  stackable: 1
-  icon: {fileID: 1776380305, guid: ec713442818a65040ac07d2c1e97a70a, type: 3}

@@ -15,16 +15,16 @@ MonoBehaviour:
   slots:
   - item: {fileID: 11400000, guid: 9313d1d8e6233ff42a7fe43f23c12c48, type: 2}
     count: 1
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
+  - item: {fileID: 11400000, guid: 6c45c40c93dd43043b8b19b7337b54c2, type: 2}
+    count: 4
+  - item: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    count: 2
+  - item: {fileID: 11400000, guid: a2295b12adfbd694cb8817c939666c59, type: 2}
+    count: 2
+  - item: {fileID: 11400000, guid: 17b85cf23c49f4e4a9fea246f93c3280, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: d15aba3904e7099489101daba64f2d3f, type: 2}
+    count: 4
   - item: {fileID: 0}
     count: 0
   - item: {fileID: 0}

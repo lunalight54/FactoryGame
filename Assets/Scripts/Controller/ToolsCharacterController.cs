@@ -9,11 +9,14 @@ public class ToolsCharacterController : MonoBehaviour
     CharacterController character;
     Rigidbody2D rgbd2d;
     ToolbarController toolbarController;
+    Animator animator;
     [SerializeField] float offsetDistance = 1f;
-    //[SerializeField] float sizeOfInteractableArea = 1.2f;
+    [SerializeField] float sizeOfInteractableArea = 1.2f;
     [SerializeField] MarkerManager markerManager;
     [SerializeField] TileMapReadController tileMapReadcontroller;
     [SerializeField] float maxDistance = 1.5f;
+    [SerializeField] ToolAction onTilePickUp;
+    [SerializeField] IconHighlight iconHighlight;
 
     Vector3Int selectedTilePosition;
     bool selectable;
@@ -23,35 +26,42 @@ public class ToolsCharacterController : MonoBehaviour
         character = GetComponent<CharacterController>();
         rgbd2d = GetComponent<Rigidbody2D>();
         toolbarController = GetComponent<ToolbarController>();
+        animator = GetComponent<Animator>();
     }
+
     private void Update()
     {
         SelectTile();
         CanSelectCheck();
         Marker();
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)) 
         {
-            if (UseToolWorld() == true)
+            if (UseToolWorld() == true) 
             {
                 return;
             }
-            //else UseToolGrid not implemented
+            UseToolGrid();
         }
     }
-    private void SelectTile()
+
+    private void SelectTile() 
     {
         selectedTilePosition = tileMapReadcontroller.GetGridPosition(Input.mousePosition, true);
     }
-    void CanSelectCheck()
+
+    void CanSelectCheck() 
     {
         Vector2 characterPosition = transform.position;
         Vector2 cameraPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         selectable = Vector2.Distance(characterPosition, cameraPosition) < maxDistance;
         markerManager.Show(selectable);
+        iconHighlight.CanSelect = selectable;
     }
+
     private void Marker()
     {
         markerManager.markedCellPosition = selectedTilePosition;
+        iconHighlight.cellPosition = selectedTilePosition;
     }
 
     private bool UseToolWorld()
@@ -61,8 +71,53 @@ public class ToolsCharacterController : MonoBehaviour
         Item item = toolbarController.GetItem;
         if (item == null) { return false; }
         if (item.onAction == null) { return false; }
+
+        animator.SetTrigger("act");
         bool complete = item.onAction.OnApply(position);
 
+        if (complete == true)
+        {
+            if (item.onItemUsed != null)
+            {
+                item.onItemUsed.OnItemUsed(item, GameManager.instance.itemContainer);
+            }
+        }
+
         return complete;
+    }
+
+    private void UseToolGrid() 
+    {
+        if (selectable == true) 
+        {
+            Item item = toolbarController.GetItem;
+            if (item == null) {
+                PickUpTile();
+                return; 
+            }
+            if (item.onTileMapAction == null) { return; }
+
+            animator.SetTrigger("act");
+            bool complete = item.onTileMapAction.OnApplyToTileMap(
+                selectedTilePosition, 
+                tileMapReadcontroller, 
+                item
+                );
+
+            if (complete == true) 
+            {
+                if (item.onItemUsed != null) 
+                {
+                    item.onItemUsed.OnItemUsed(item, GameManager.instance.itemContainer);
+                }
+            }
+        }
+    }
+
+    private void PickUpTile()
+    {
+        if (onTilePickUp == null) { return; }
+
+        onTilePickUp.OnApplyToTileMap(selectedTilePosition, tileMapReadcontroller, null);
     }
 }

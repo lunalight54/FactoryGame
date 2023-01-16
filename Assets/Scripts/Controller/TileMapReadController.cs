@@ -7,6 +7,7 @@ public class TileMapReadController : MonoBehaviour
 {
     [SerializeField] Tilemap tilemap;
     [SerializeField] List<TileData> tileDatas;
+    public PlaceableObjectsReferenceManager objectsManager;
     Dictionary<TileBase, TileData> dataFromTiles;
 
     private void Start()

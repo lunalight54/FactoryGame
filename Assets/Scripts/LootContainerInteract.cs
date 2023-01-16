@@ -12,7 +12,6 @@ public class LootContainerInteract : Interactable
     public override void Interact(Character character)
 
     {
-
         if (opened == false)
         {
             opened = true;

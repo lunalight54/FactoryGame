@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad4cad4cf0448ef4fbef95be52ce3c9d, type: 3}
+  m_Name: New Placeable Objects Container
+  m_EditorClassIdentifier: 
+  placeableObjects:
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 1, y: 4, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 1, y: 0, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 0, y: 2, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -2, y: -1, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 1, y: 0, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 1, y: 0, z: 0}
+  - placedItem: {fileID: 11400000, guid: a2295b12adfbd694cb8817c939666c59, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 2, y: 0, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -3, y: -1, z: 0}
+  - placedItem: {fileID: 11400000, guid: a2295b12adfbd694cb8817c939666c59, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 1, y: 0, z: 0}
+  - placedItem: {fileID: 11400000, guid: a2295b12adfbd694cb8817c939666c59, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 1, y: 0, z: 0}
+  - placedItem: {fileID: 11400000, guid: a2295b12adfbd694cb8817c939666c59, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 1, y: 0, z: 0}
+  - placedItem: {fileID: 11400000, guid: a2295b12adfbd694cb8817c939666c59, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 1, y: 0, z: 0}
+  - placedItem: {fileID: 11400000, guid: a2295b12adfbd694cb8817c939666c59, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 0, y: -1, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -2, y: 3, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -1, y: 3, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 0, y: 3, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 1, y: 3, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 1, y: 2, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 0, y: 2, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -1, y: 2, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -2, y: 2, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -2, y: 1, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -1, y: 1, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 0, y: 1, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 1, y: 1, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -4, y: -3, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -3, y: -1, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -3, y: -2, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -2, y: -1, z: 0}
+  - placedItem: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -2, y: -2, z: 0}
+  - placedItem: {fileID: 11400000, guid: a2295b12adfbd694cb8817c939666c59, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -2, y: -1, z: 0}
+  - placedItem: {fileID: 11400000, guid: a2295b12adfbd694cb8817c939666c59, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 1, y: -1, z: 0}
+  - placedItem: {fileID: 11400000, guid: 17b85cf23c49f4e4a9fea246f93c3280, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 2, y: 0, z: 0}
+  - placedItem: {fileID: 11400000, guid: 17b85cf23c49f4e4a9fea246f93c3280, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -3, y: -2, z: 0}
+  - placedItem: {fileID: 11400000, guid: d15aba3904e7099489101daba64f2d3f, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 1, y: 0, z: 0}

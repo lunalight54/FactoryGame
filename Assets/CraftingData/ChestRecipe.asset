@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63a6dcc7eb39daf42878207745f48780, type: 3}
-  m_Name: Furnace Recipe
+  m_Name: ChestRecipe
   m_EditorClassIdentifier: 
   elements:
-  - item: {fileID: 11400000, guid: 9313d1d8e6233ff42a7fe43f23c12c48, type: 2}
-    count: 20
+  - item: {fileID: 11400000, guid: 6c45c40c93dd43043b8b19b7337b54c2, type: 2}
+    count: 15
   output:
-    item: {fileID: 11400000, guid: a2295b12adfbd694cb8817c939666c59, type: 2}
-    count: 1
+    item: {fileID: 11400000, guid: a31ab8faa8d247f469561dc5154e21b9, type: 2}
+    count: 0

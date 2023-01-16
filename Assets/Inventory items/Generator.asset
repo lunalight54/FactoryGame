@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f838e39139982241b3545959f03b313, type: 3}
+  m_Name: Generator
+  m_EditorClassIdentifier: 
+  Name: Generator
+  stackable: 1
+  icon: {fileID: 21300000, guid: 213f6bb7ecf293a40adf176dc6b8d5bc, type: 3}
+  onAction: {fileID: 0}
+  onTileMapAction: {fileID: 11400000, guid: 361018ca72c0dc04d977783086da2d8d, type: 2}
+  onItemUsed: {fileID: 0}
+  iconHighlight: 1
+  itemPrefab: {fileID: 3978403833946458135, guid: 14b733ba7a203e54581226024382b7ed, type: 3}

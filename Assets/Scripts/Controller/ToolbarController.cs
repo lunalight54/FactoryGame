@@ -5,32 +5,36 @@ using UnityEngine;
 
 public class ToolbarController : MonoBehaviour
 {
-    [SerializeField] int toolbarSize = 12;
+    [SerializeField] int toolbarSize = 9;
     int selectedTool;
 
     public Action<int> onChange;
+    [SerializeField] IconHighlight iconHighlight;
 
-    public Item GetItem
+    public Item GetItem 
     {
-        get
-        {
+        get {
             return GameManager.instance.itemContainer.slots[selectedTool].item;
         }
     }
 
+    private void Start()
+    {
+        onChange += UpdateHighlightIcon;
+        UpdateHighlightIcon(selectedTool);
+    }
 
     private void Update()
     {
         float delta = Input.mouseScrollDelta.y;
-        if (delta != 0)
+        if (delta != 0) 
         {
             if (delta > 0)
             {
                 selectedTool += 1;
-                selectedTool = (selectedTool >= toolbarSize ? 0 : selectedTool);
+                selectedTool = (selectedTool >= toolbarSize ? 0 : selectedTool);  
             }
-            else
-            {
+            else {
                 selectedTool -= 1;
                 selectedTool = (selectedTool <= 0 ? toolbarSize - 1 : selectedTool);
             }
@@ -41,5 +45,22 @@ public class ToolbarController : MonoBehaviour
     internal void Set(int id)
     {
         selectedTool = id;
+        onChange?.Invoke(selectedTool);
+    }
+
+    void UpdateHighlightIcon(int id) 
+    {
+        Item item = GetItem;
+        if (item == null) {
+            iconHighlight.Show = false;
+            return;
+        }
+
+        iconHighlight.Show = item.iconHighlight;
+        if (item.iconHighlight) 
+        {
+            Debug.Log("new icon set");
+            iconHighlight.Set(item.icon);
+        }
     }
 }
