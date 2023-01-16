@@ -23,6 +23,7 @@ public class PlaceableObjectsManager : MonoBehaviour
         go.transform.position = position;
         placeableObjects.placeableObjects.Add(new PlaceableObject(item, go.transform, positionOnGrid));
         itemContainer.Remove(item);//dwadadwadwa
+        GameManager.instance.toolbarPanel.Show();
 
     }
 }

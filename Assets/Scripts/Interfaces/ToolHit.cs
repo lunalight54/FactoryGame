@@ -13,4 +13,8 @@ public class ToolHit : MonoBehaviour
     {
         return true;
     }
+    public virtual void GetDamage(int damage)
+    {
+
+    }
 }

@@ -26,5 +26,8 @@ public class Crafting : MonoBehaviour
         }
 
         inventory.Add(recipe.output.item, recipe.output.count);
+        GameManager.instance.inventoryPanel.Show();
+        GameManager.instance.toolbarPanel.Show();
+
     }
 }

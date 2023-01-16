@@ -11,7 +11,7 @@ public class ToolsCharacterController : MonoBehaviour
     ToolbarController toolbarController;
     Animator animator;
     [SerializeField] float offsetDistance = 1f;
-    [SerializeField] float sizeOfInteractableArea = 1.2f;
+    //[SerializeField] float sizeOfInteractableArea = 1.2f;
     [SerializeField] MarkerManager markerManager;
     [SerializeField] TileMapReadController tileMapReadcontroller;
     [SerializeField] float maxDistance = 1.5f;
@@ -72,7 +72,7 @@ public class ToolsCharacterController : MonoBehaviour
         if (item == null) { return false; }
         if (item.onAction == null) { return false; }
 
-        animator.SetTrigger("act");
+        //animator.SetTrigger("act");
         bool complete = item.onAction.OnApply(position);
 
         if (complete == true)
@@ -97,7 +97,6 @@ public class ToolsCharacterController : MonoBehaviour
             }
             if (item.onTileMapAction == null) { return; }
 
-            animator.SetTrigger("act");
             bool complete = item.onTileMapAction.OnApplyToTileMap(
                 selectedTilePosition, 
                 tileMapReadcontroller, 

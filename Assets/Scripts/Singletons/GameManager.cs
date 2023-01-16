@@ -17,4 +17,7 @@ public class GameManager : MonoBehaviour
     public ItemContainer itemContainer;
     public ItemDragAndDropController itemDragAndDropController;
     public PlaceableObjectsReferenceManager placeableObjectsReferenceManager;
+    public ItemPanel toolbarPanel;
+    public ItemPanel inventoryPanel;
+
 }

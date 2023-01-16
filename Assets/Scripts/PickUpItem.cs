@@ -48,6 +48,7 @@ public class PickUpItem : MonoBehaviour
             if (GameManager.instance.itemContainer != null)
             {
                 GameManager.instance.itemContainer.Add(item, count);
+                GameManager.instance.toolbarPanel.Show();
             }
             else
             {
