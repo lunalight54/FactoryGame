@@ -9,5 +9,4 @@ public class MobData : ScriptableObject
     public float speed = 1f;
     public int health = 10;
     public bool hostile;
-    //public Sprite icon;
 }

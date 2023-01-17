@@ -20,6 +20,7 @@ public class MobReaction : ToolHit
     public override void Hit()
     {
         currentHealth -= ToolDamage;
+
         if (currentHealth <= 0)
         {
             Vector3 position = transform.position;

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5273625107703421968}
   - component: {fileID: 3533052240032183436}
   - component: {fileID: 2913554608971579835}
+  - component: {fileID: -8540951306083248240}
   m_Layer: 0
   m_Name: Generator
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3978403833946458135}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.27834067, y: 4.0858755, z: 0.102515966}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1048973871874180510}
@@ -74,6 +75,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.81585693}
   m_EdgeRadius: 0
+--- !u!114 &-8540951306083248240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3978403833946458135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5898516462911dd4483ba8d872ccc2d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpDrop: {fileID: 3978403833946458135}
+  spread: 0.7
+  item: {fileID: 11400000, guid: d15aba3904e7099489101daba64f2d3f, type: 2}
+  itemCountInOneDrop: 1
+  dropCount: 1
+  nodeType: 3
 --- !u!1 &7142653942672008529
 GameObject:
   m_ObjectHideFlags: 0

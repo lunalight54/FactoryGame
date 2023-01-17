@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: MineBronze
   m_EditorClassIdentifier: 
   sizeOfInteractableArea: 1
-  canHitNodesOfType: 0100000002000000
+  canHitNodesOfType: 010000000200000003000000

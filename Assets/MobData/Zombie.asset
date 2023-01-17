@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Zombie
   m_EditorClassIdentifier: 
   Name: Zombie
-  speed: 1
+  speed: 0.2
   health: 10
   hostile: 1
-  mobReaction: {fileID: 0}

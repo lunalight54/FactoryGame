@@ -11,7 +11,7 @@ public class ToolHit : MonoBehaviour
 
     public virtual bool CanBeHit(List<ResourceNodeType> canBeHit)
     {
-        return true;
+        return false;
     }
     public virtual void GetDamage(int damage)
     {

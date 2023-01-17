@@ -14,9 +14,11 @@ public class DayTimeController : MonoBehaviour
     [SerializeField] float timeScale = 60f;
 
     float time;
-    private int days = 0;
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Light2D globalLight;
+    [SerializeField] int hostileMobsANight = 2;
+    int days = 0;
+    int mobs;
     float Hours
     {
         get { return time / 3600f; }
@@ -24,6 +26,10 @@ public class DayTimeController : MonoBehaviour
     float Minutes
     {
         get { return time % 3600f / 600f; }
+    }
+    public void Awake()
+    {
+        mobs = hostileMobsANight;
     }
 
     private void Update()
@@ -35,9 +41,15 @@ public class DayTimeController : MonoBehaviour
         float v = nightTimeCurve.Evaluate(Hours);
         Color c = Color.Lerp(dayLightColor, nightLightColor, v);
         globalLight.color = c;
+        if (hh > 21 && mobs > 0)//night
+        {
+            MobSpawnManager.instance.SpawnMob(new Vector3(UnityEngine.Random.Range(-30, 30), UnityEngine.Random.Range(-12, 12), 0));
+            mobs--;
+        }
         if (time > secondsInDay)
         {
             NextDay();
+            mobs = hostileMobsANight;
         }
     }
     void NextDay()
@@ -45,9 +57,13 @@ public class DayTimeController : MonoBehaviour
         time = 0;
         days += 1;
     }
-
-    void SetTime(float setTime)
+    public bool IsNight()
     {
-
+        int hh = (int)Hours;
+        if ( hh < 6 || hh > 21)
+        {
+            return true;
+        }
+        return false;
     }
 }
