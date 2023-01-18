@@ -63,11 +63,9 @@ public class MobBehaviourController : MonoBehaviour
         if (playerTransform.position.x < transform.position.x )//look left
         {
             animator.SetFloat("Horizontal", -1f);
-            animator.SetFloat("lastHorizontal", -1f);
         }
         else{//look right
             animator.SetFloat("Horizontal", 1f);
-            animator.SetFloat("lastHorizontal", 1f);
         }
     }
 }
