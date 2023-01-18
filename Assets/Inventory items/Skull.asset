@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f838e39139982241b3545959f03b313, type: 3}
   m_Name: Skull
   m_EditorClassIdentifier: 
-  Name: 
-  stackable: 0
-  icon: {fileID: 0}
+  Name: Skull
+  stackable: 1
+  icon: {fileID: -1168030255, guid: 9128d984e212efb489b8fbf6f625c93d, type: 3}
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 0}
   onItemUsed: {fileID: 0}
