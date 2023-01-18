@@ -5,7 +5,7 @@ using UnityEngine;
 public class InventoryController : MonoBehaviour
 {
     [SerializeField] GameObject panel;
-    //[SerializeField] GameObject statusPanel;
+    [SerializeField] GameObject craftingPanel;
     //[SerializeField] GameObject toolbarPanel;
 
     private void Update()
@@ -26,6 +26,8 @@ public class InventoryController : MonoBehaviour
     {
         panel.SetActive(true);
         GameManager.instance.toolbarPanel.gameObject.SetActive(false);
+        craftingPanel.SetActive(true);
+        //GameManager.instance.pa
         //statusPanel.SetActive(true);
         //toolbarPanel.SetActive(false);
     }
@@ -34,7 +36,7 @@ public class InventoryController : MonoBehaviour
     {
         panel.SetActive(false);
         GameManager.instance.toolbarPanel.gameObject.SetActive(true);
-
+        craftingPanel.SetActive(false);
         //statusPanel.SetActive(false);
         //toolbarPanel.SetActive(true);
     }

@@ -83,13 +83,13 @@ public class FurnanceInteractableController : Interactable
     public  void Open(Character character)
     {
         isOpened = true;
-        character.GetComponent<ItemContainerInteractController>().Open(itemContainer, transform);
+        character.GetComponent<FurnanceContainerInteractController>().Open(itemContainer, transform);
     }
 
     public  void Close(Character character)
     {
         isOpened = false;
-        character.GetComponent<ItemContainerInteractController>().Close();
+        character.GetComponent<FurnanceContainerInteractController>().Close();
     }
 
     public void startWork()

@@ -162,10 +162,10 @@ TextureImporter:
       name: UnSmeltedBronze
       rect:
         serializedVersion: 2
-        x: 37
-        y: 198
+        x: 98
+        y: 199
         width: 23
-        height: 21
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,12 +204,12 @@ TextureImporter:
       name: SmeltedBronze
       rect:
         serializedVersion: 2
-        x: 98
-        y: 199
-        width: 23
-        height: 22
+        x: 100
+        y: 136
+        width: 21
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,6 +217,48 @@ TextureImporter:
       bones: []
       spriteID: 1c12462492449a94a91be1480bd11762
       internalID: 847710086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Unsmelted Iron
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 199
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59af32e58f5b4f458d717c81720a81b
+      internalID: -1219840985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smelted Iron
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 136
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300879ded92957345949c6debeeced2d
+      internalID: -334731184
       vertices: []
       indices: 
       edges: []
@@ -232,10 +274,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Unsmelted Iron: -1219840985
       furnaceIcon: 1776380305
       CopperNode: -202516111
       UnSmeltedBronze: -1365061420
       workingFurnance_1: 1389805966
+      Smelted Iron: -334731184
       SmeltedBronze: 847710086
   spritePackingTag: 
   pSDRemoveMatte: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,8 +29,8 @@ public class LootContainerInteract : Interactable
         openedChest.SetActive(true);
 
         //AudioManager.instance.Play(onOpenAudio);
-
-        character.GetComponent<ItemContainerInteractController>().Open(itemContainer, transform);
+        throw new Exception("To Implement");
+        //character.GetComponent<FurnanceContainerInteractController>().Open(itemContainer, transform);
     }
 
     public void Close(Character character) 
@@ -39,7 +40,7 @@ public class LootContainerInteract : Interactable
         openedChest.SetActive(false);
 
         //AudioManager.instance.Play(onOpenAudio);
-
-        character.GetComponent<ItemContainerInteractController>().Close();
+        throw new Exception("To Implement");
+        //character.GetComponent<ItemContainerInteractController>().Close();
     }
 }

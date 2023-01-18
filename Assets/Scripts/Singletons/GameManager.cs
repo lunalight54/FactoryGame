@@ -21,5 +21,5 @@ public class GameManager : MonoBehaviour
     public ItemPanel inventoryPanel;
     public ItemPanel furnancePanel;
     public DayTimeController dayTimeController;
-    
+    public MessageController messageController;
 }

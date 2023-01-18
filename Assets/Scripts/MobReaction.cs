@@ -19,8 +19,11 @@ public class MobReaction : ToolHit
     }
     public override void Hit()
     {
+        GameManager.instance.messageController.hideBackground();
+        GameManager.instance.messageController.Show("hit!",1,Color.red);
+        
         currentHealth -= ToolDamage;
-
+        
         if (currentHealth <= 0)
         {
             Vector3 position = transform.position;

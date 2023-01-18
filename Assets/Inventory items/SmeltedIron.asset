@@ -9,7 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41b253cd141bf3c4f9a65665d4ea0d52, type: 3}
-  m_Name: Furnance Recipe List
+  m_Script: {fileID: 11500000, guid: 6f838e39139982241b3545959f03b313, type: 3}
+  m_Name: SmeltedIron
   m_EditorClassIdentifier: 
-  recipes: []
+  Name: 
+  stackable: 0
+  icon: {fileID: 0}
+  onAction: {fileID: 0}
+  onTileMapAction: {fileID: 0}
+  onItemUsed: {fileID: 0}
+  iconHighlight: 0
+  itemPrefab: {fileID: 0}

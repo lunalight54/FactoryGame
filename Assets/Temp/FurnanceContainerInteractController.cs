@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemContainerInteractController : MonoBehaviour
+public class FurnanceContainerInteractController : MonoBehaviour
 {
     ItemContainer targetItemContainer;
     InventoryController inventoryController;

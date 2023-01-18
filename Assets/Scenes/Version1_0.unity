@@ -33073,7 +33073,7 @@ MonoBehaviour:
   placeableObjectsReferenceManager: {fileID: 1914483090}
   toolbarPanel: {fileID: 93721928}
   inventoryPanel: {fileID: 476060086}
-  furnancePanel: {fileID: 0}
+  furnancePanel: {fileID: 2122186948}
   dayTimeController: {fileID: 1914483088}
 --- !u!4 &1914483085
 Transform:
@@ -33247,6 +33247,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2228583969100764535, guid: 7f02edc1963b2014988d947b09a4607d, type: 3}
+      propertyPath: oneIterationLength
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 564181654148064570, guid: 7f02edc1963b2014988d947b09a4607d, type: 3}
       propertyPath: m_RootOrder
       value: 1
