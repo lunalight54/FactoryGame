@@ -25,11 +25,31 @@ public class ItemSlot
         item = null;
         count = 0;
     }
+    public void Decrease()
+    {
+        if (count > 0)
+        {
+            count -= 1;
+        }
+        if(count == 0)
+        {
+            item = null;
+        }
+    }
 }
 [CreateAssetMenu(menuName = "Data/Item Container")]
 public class ItemContainer : ScriptableObject
 {
     public List<ItemSlot> slots;
+
+    public void Init(int amountOfSlots)
+    {
+        slots = new List<ItemSlot>();
+        for (int i = 0; i < amountOfSlots; i++)
+        {
+            slots.Add(new ItemSlot());
+        }
+    }
 
     public void Add(Item item, int count)
     {

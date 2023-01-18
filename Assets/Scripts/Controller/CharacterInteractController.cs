@@ -30,13 +30,12 @@ public class CharacterInteractController : MonoBehaviour
     {
         Vector2 position = rgbd2d.position + characterController.lastMotionVector * offsetDistance;
         Collider2D[] collider = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
-
         foreach (var c in collider)
         {
-            var hit = c.GetComponent<Interactable>();
-            if (hit != null)
+            var objectToInteract = c.GetComponent<Interactable>();
+            if (objectToInteract != null)
             {
-                hit.Interact(character);
+                objectToInteract.Interact(character);
                 break;
             }
         }

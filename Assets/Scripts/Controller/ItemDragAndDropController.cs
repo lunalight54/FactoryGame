@@ -48,10 +48,18 @@ public class ItemDragAndDropController : MonoBehaviour
         }
         else
         {
-            Item item = currentItemSlot.item;
-            int count = currentItemSlot.count;
-            currentItemSlot.Copy(this.itemSlot);
-            this.itemSlot.Set(item, count);
+            if (this.itemSlot.item == currentItemSlot.item)
+            {
+                currentItemSlot.count += this.itemSlot.count;
+                this.itemSlot.Clear();
+            }
+            else
+            {
+                Item item = currentItemSlot.item;
+                int count = currentItemSlot.count;
+                currentItemSlot.Copy(this.itemSlot);
+                this.itemSlot.Set(item, count);
+            }
         }
 
         UpdateIcon();

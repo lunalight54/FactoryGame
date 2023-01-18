@@ -17,15 +17,22 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
         myIndex = index;
     }
 
-    public void Set(ItemSlot slot)
+    public void Set(ItemSlot slot, bool showCount = true)
     {
         icon.gameObject.SetActive(true);
         icon.sprite = slot.item.icon;
 
         if (slot.item.stackable == true)
         {
-            text.gameObject.SetActive(true);
-            text.text = slot.count.ToString();
+            if (showCount == true)
+            {
+                text.gameObject.SetActive(true);
+                text.text = slot.count.ToString();
+            }
+            else
+            {
+                text.gameObject.SetActive(false);
+            }
         }
         else
         {

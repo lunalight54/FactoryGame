@@ -7,12 +7,12 @@ public class RecipePanel : ItemPanel
     [SerializeField] RecipeList recipeList;
     [SerializeField] Crafting crafting;
 
-    public override void Show()
+    public override void Show() 
     {
         int i = 0;
         for (; i < recipeList.recipes.Count && i < buttons.Count; i++)
         {
-            buttons[i].Set(recipeList.recipes[i].output);
+            buttons[i].Set(recipeList.recipes[i].output, false);
         }
         for (;i < buttons.Count; i++)
         {

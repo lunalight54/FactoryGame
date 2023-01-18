@@ -19,5 +19,7 @@ public class GameManager : MonoBehaviour
     public PlaceableObjectsReferenceManager placeableObjectsReferenceManager;
     public ItemPanel toolbarPanel;
     public ItemPanel inventoryPanel;
+    public ItemPanel furnancePanel;
     public DayTimeController dayTimeController;
+    
 }

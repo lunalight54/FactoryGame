@@ -14,6 +14,8 @@ public class ResourceNode : ToolHit
     
     public override void Hit()
     {
+        if(GameManager.instance.inventoryPanel.gameObject.activeInHierarchy)
+            return;
         while (dropCount>0)
         {
             dropCount -= 1;

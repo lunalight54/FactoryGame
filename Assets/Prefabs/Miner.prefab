@@ -96,6 +96,8 @@ GameObject:
   - component: {fileID: 6859724962946703122}
   - component: {fileID: 6859724962946703125}
   - component: {fileID: 219745060073758316}
+  - component: {fileID: -4720685560073138768}
+  - component: {fileID: 242160278264152152}
   m_Layer: 0
   m_Name: Miner
   m_TagString: Untagged
@@ -179,6 +181,34 @@ MonoBehaviour:
   itemCountInOneDrop: 1
   dropCount: 1
   nodeType: 3
+--- !u!114 &-4720685560073138768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6859724962946703124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a471352a14f65d4da5aade973b5c4f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &242160278264152152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6859724962946703124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b91ae246995a9874ba9e27baca735aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ToSpawn: {fileID: 11400000, guid: bbe5fa713313eef469b568278c43e2eb, type: 2}
+  count: 1
+  spread: 2
+  probability: 0.5
 --- !u!1 &6859724963190991769
 GameObject:
   m_ObjectHideFlags: 0

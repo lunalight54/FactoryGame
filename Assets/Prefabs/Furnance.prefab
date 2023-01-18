@@ -178,8 +178,8 @@ GameObject:
   m_Component:
   - component: {fileID: 564181654148064570}
   - component: {fileID: 4551137135646706586}
-  - component: {fileID: 197844758167545818}
   - component: {fileID: 7137134175821469187}
+  - component: {fileID: -2228583969100764535}
   m_Layer: 0
   m_Name: Furnance
   m_TagString: Untagged
@@ -230,21 +230,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8781569, y: 1.3800346}
   m_EdgeRadius: 0
---- !u!114 &197844758167545818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5006543794136482290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 996fdfb08fef67b49be815e27f1bdb8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  workingFurnance: {fileID: 1979288754799416077}
-  NotWorkingFurnance: {fileID: 1349742614929334612}
-  isWorking: 0
 --- !u!114 &7137134175821469187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,3 +248,21 @@ MonoBehaviour:
   itemCountInOneDrop: 1
   dropCount: 1
   nodeType: 3
+--- !u!114 &-2228583969100764535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5006543794136482290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 996fdfb08fef67b49be815e27f1bdb8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  workingFurnance: {fileID: 1979288754799416077}
+  NotWorkingFurnance: {fileID: 1349742614929334612}
+  isWorking: 0
+  furnanceRecipeList: {fileID: 11400000, guid: ff97199ae2b0d0c4594a3db8d068e6c2, type: 2}
+  fuelForFurnance: {fileID: 11400000, guid: 6c45c40c93dd43043b8b19b7337b54c2, type: 2}
+  oneIterationLength: 900
