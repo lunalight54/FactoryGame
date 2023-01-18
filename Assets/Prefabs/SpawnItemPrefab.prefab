@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2448743196851187060}
   - component: {fileID: 2448743196851187061}
   m_Layer: 0
-  m_Name: rock_item
+  m_Name: SpawnItemPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 36070061
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ebcadb6fcc8276e4b89ddeb9441116a0, type: 3}
+  m_Sprite: {fileID: 526475744, guid: 9128d984e212efb489b8fbf6f625c93d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

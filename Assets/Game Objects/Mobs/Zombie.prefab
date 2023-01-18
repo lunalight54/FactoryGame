@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mobInfo: {fileID: 11400000, guid: e8913d3b2df589049841a80e2c6c4d57, type: 2}
   spread: 0.7
-  item: {fileID: 11400000, guid: 9313d1d8e6233ff42a7fe43f23c12c48, type: 2}
+  item: {fileID: 11400000, guid: d73ba5be4d4a93643ae1f625b975c576, type: 2}
   itemCountInOneDrop: 1
 --- !u!114 &1938792195
 MonoBehaviour:
@@ -185,6 +185,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mobInfo: {fileID: 11400000, guid: e8913d3b2df589049841a80e2c6c4d57, type: 2}
-  time: {fileID: 0}
   attackDistance: 1
-  moving: 0

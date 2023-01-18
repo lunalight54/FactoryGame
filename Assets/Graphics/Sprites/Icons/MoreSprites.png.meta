@@ -263,6 +263,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: rock
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 385
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71eee16c5d71ad4f9e3ec094d65265b
+      internalID: 1097001505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -277,6 +298,7 @@ TextureImporter:
       Unsmelted Iron: -1219840985
       furnaceIcon: 1776380305
       CopperNode: -202516111
+      rock: 1097001505
       UnSmeltedBronze: -1365061420
       workingFurnance_1: 1389805966
       Smelted Iron: -334731184

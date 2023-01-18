@@ -146,7 +146,7 @@ TextureImporter:
         width: 31
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,6 +154,48 @@ TextureImporter:
       bones: []
       spriteID: ac0d26f3047af484e8cb635c5819fbc7
       internalID: 2049693441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sushi
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 358
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c01ee731a3216409a53f0c64970589
+      internalID: 526475744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 482
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343dbfd2434b84a4fa79fc9096494751
+      internalID: -1168030255
       vertices: []
       indices: 
       edges: []
@@ -170,7 +212,9 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       stick_Icon: 141852829
+      sushi: 526475744
       WoodenSwordIcon: 2049693441
+      Skull: -1168030255
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

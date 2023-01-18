@@ -37,6 +37,7 @@ public class InventoryController : MonoBehaviour
         panel.SetActive(false);
         GameManager.instance.toolbarPanel.gameObject.SetActive(true);
         craftingPanel.SetActive(false);
+        GameManager.instance.furnancePanel.gameObject.SetActive(false);
         //statusPanel.SetActive(false);
         //toolbarPanel.SetActive(true);
     }

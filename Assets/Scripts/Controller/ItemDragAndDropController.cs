@@ -10,12 +10,12 @@ public class ItemDragAndDropController : MonoBehaviour
     [SerializeField] ItemSlot itemSlot;
     [SerializeField] private GameObject ItemIcon;
     private RectTransform iconTransform;
-    private RawImage itemIconImage;
+    private Image itemIconImage;
     private void Start()
     {
         itemSlot = new ItemSlot();
         iconTransform = ItemIcon.GetComponent<RectTransform>();
-        itemIconImage = ItemIcon.GetComponent<RawImage>();
+        itemIconImage = ItemIcon.GetComponent<Image>();
     }
 
     private void Update()
@@ -74,7 +74,7 @@ public class ItemDragAndDropController : MonoBehaviour
         else
         {
             ItemIcon.SetActive(true);
-            itemIconImage.texture = itemSlot.item.icon.texture;
+            itemIconImage.sprite = itemSlot.item.icon;
         }
     }
 }
