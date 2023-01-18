@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63a6dcc7eb39daf42878207745f48780, type: 3}
   m_Name: Generator
   m_EditorClassIdentifier: 
-  elements: []
+  elements:
+  - item: {fileID: 11400000, guid: 6c45c40c93dd43043b8b19b7337b54c2, type: 2}
+    count: 10
+  - item: {fileID: 11400000, guid: 7782bb1a7455f6b4fadea79f58038214, type: 2}
+    count: 10
   output:
-    item: {fileID: 0}
-    count: 0
+    item: {fileID: 11400000, guid: d15aba3904e7099489101daba64f2d3f, type: 2}
+    count: 1

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c08e1ece17167a4ab79bc2ee491ef96, type: 3}
   m_Name: SmeltedIron
   m_EditorClassIdentifier: 
-  input: {fileID: 0}
-  output: {fileID: 0}
+  input: {fileID: 11400000, guid: 6c46f32415b80dc4eaaa5939ed3d943e, type: 2}
+  output: {fileID: 11400000, guid: 51600c7ee7170e9459a63665df599d98, type: 2}

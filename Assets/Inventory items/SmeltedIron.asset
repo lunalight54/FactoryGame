@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f838e39139982241b3545959f03b313, type: 3}
   m_Name: SmeltedIron
   m_EditorClassIdentifier: 
-  Name: 
-  stackable: 0
-  icon: {fileID: 0}
+  Name: SmeltedIron
+  stackable: 1
+  icon: {fileID: -334731184, guid: ec713442818a65040ac07d2c1e97a70a, type: 3}
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 0}
   onItemUsed: {fileID: 0}

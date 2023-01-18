@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63a6dcc7eb39daf42878207745f48780, type: 3}
   m_Name: WoodenSword
   m_EditorClassIdentifier: 
-  elements: []
+  elements:
+  - item: {fileID: 11400000, guid: 6c45c40c93dd43043b8b19b7337b54c2, type: 2}
+    count: 10
   output:
-    item: {fileID: 0}
-    count: 0
+    item: {fileID: 11400000, guid: e3109ea748d1557408831cdec5fa29bf, type: 2}
+    count: 1
