@@ -26,7 +26,8 @@ public class InventoryController : MonoBehaviour
     {
         panel.SetActive(true);
         GameManager.instance.toolbarPanel.gameObject.SetActive(false);
-        craftingPanel.SetActive(true);
+        if(GameManager.instance.chestPanel.gameObject.activeInHierarchy == false)
+            craftingPanel.SetActive(true);
         //GameManager.instance.pa
         //statusPanel.SetActive(true);
         //toolbarPanel.SetActive(false);
@@ -38,6 +39,8 @@ public class InventoryController : MonoBehaviour
         GameManager.instance.toolbarPanel.gameObject.SetActive(true);
         craftingPanel.SetActive(false);
         GameManager.instance.furnancePanel.gameObject.SetActive(false);
+        GameManager.instance.chestPanel.gameObject.SetActive(false);
+
         //statusPanel.SetActive(false);
         //toolbarPanel.SetActive(true);
     }

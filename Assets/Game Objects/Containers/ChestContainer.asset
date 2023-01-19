@@ -10,37 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 686d0f1ca3dd5094f9e495488b4ff925, type: 3}
-  m_Name: Inventory
+  m_Name: ChestContainer
   m_EditorClassIdentifier: 
   slots:
-  - item: {fileID: 11400000, guid: 9313d1d8e6233ff42a7fe43f23c12c48, type: 2}
-    count: 6
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
+  - item: {fileID: 11400000, guid: 6c45c40c93dd43043b8b19b7337b54c2, type: 2}
+    count: 30
+  - item: {fileID: 11400000, guid: bbe5fa713313eef469b568278c43e2eb, type: 2}
+    count: 30
+  - item: {fileID: 11400000, guid: 6c46f32415b80dc4eaaa5939ed3d943e, type: 2}
+    count: 30
+  - item: {fileID: 11400000, guid: 7782bb1a7455f6b4fadea79f58038214, type: 2}
+    count: 30
+  - item: {fileID: 11400000, guid: 51600c7ee7170e9459a63665df599d98, type: 2}
+    count: 30
   - item: {fileID: 0}
     count: 0
   - item: {fileID: 0}

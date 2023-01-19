@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public ItemPanel toolbarPanel;
     public ItemPanel inventoryPanel;
     public ItemPanel furnancePanel;
+    public ItemPanel chestPanel;
     public DayTimeController dayTimeController;
     public MessageController messageController;
 }

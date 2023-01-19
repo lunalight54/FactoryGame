@@ -6,7 +6,7 @@ public class MinerInteractable : Interactable
 {
     [SerializeField] GameObject workingMiner;
     [SerializeField] GameObject NotWorkingMiner;
-    [SerializeField] bool isWorking;
+    [SerializeField] private bool isWorking;
 
     public override void Interact(Character character)
     {
@@ -24,4 +24,12 @@ public class MinerInteractable : Interactable
             workingMiner.SetActive(false);
         }
     }
+
+    public bool IsWorking()
+    {
+        return isWorking;
+    }
+
+
 }
+

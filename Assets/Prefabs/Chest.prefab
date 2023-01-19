@@ -77,6 +77,8 @@ MonoBehaviour:
   closedChest: {fileID: 7928323824271545014}
   openedChest: {fileID: 7928323825545697210}
   opened: 0
+  onOpenAudio: {fileID: 0}
+  itemContainer: {fileID: 0}
 --- !u!114 &2277378181111521218
 MonoBehaviour:
   m_ObjectHideFlags: 0

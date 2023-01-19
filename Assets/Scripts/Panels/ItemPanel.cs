@@ -32,7 +32,7 @@ public class ItemPanel : MonoBehaviour
 
     public virtual void Show()
     {
-        for (int i = 0; i < itemContainer.slots.Count && i<buttons.Count; i++)
+        for (int i = 0; i < itemContainer.slots.Count && i < buttons.Count; i++)
         {
             if (itemContainer.slots[i].item == null)
             {

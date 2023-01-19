@@ -13,7 +13,7 @@ public class FurnanceInteractableController : Interactable
     [SerializeField] private FurnanceRecipeList furnanceRecipeList;
     [SerializeField] private Item fuelForFurnance;
     [SerializeField] private float oneIterationLength;
-    private ItemContainer itemContainer;
+    [SerializeField] ItemContainer itemContainer;
     private ItemSlot toMeltItemSlot;
     private ItemSlot meltedItemSlot;
     private ItemSlot fuelSlot;
@@ -23,8 +23,11 @@ public class FurnanceInteractableController : Interactable
     {
         isOpened = false;
         time = 0;
-        itemContainer = (ItemContainer)ScriptableObject.CreateInstance(typeof(ItemContainer));
-        itemContainer.Init(3);
+        if (itemContainer == null)
+        {
+            itemContainer = (ItemContainer)ScriptableObject.CreateInstance(typeof(ItemContainer));
+            itemContainer.Init(3);
+        }
         toMeltItemSlot = itemContainer.slots[0];
         meltedItemSlot = itemContainer.slots[1];
         fuelSlot = itemContainer.slots[2];
@@ -59,13 +62,14 @@ public class FurnanceInteractableController : Interactable
                     fuelSlot.Decrease();
                     toMeltItemSlot.Decrease();
                     
-                    if (fuelSlot.count == 0 || toMeltItemSlot.count == 0)
-                    {
-                        if(isWorking == true)
-                            stopWork();
-                    }
+                    
                     GameManager.instance.furnancePanel.Show();
                 }
+            }
+
+            if (fuelSlot.count ==0 || toMeltItemSlot.count == 0)
+            {
+                stopWork();
             }
         }
     }

@@ -8,9 +8,16 @@ public class LootContainerInteract : Interactable
     [SerializeField] GameObject closedChest;
     [SerializeField] GameObject openedChest;
     [SerializeField] bool opened;
-    [SerializeField] AudioClip onOpenAudio;
     [SerializeField] ItemContainer itemContainer;
 
+    private void Start()
+    {
+        if (itemContainer == null)
+        {
+            itemContainer = (ItemContainer)ScriptableObject.CreateInstance(typeof(ItemContainer));
+            itemContainer.Init(18);
+        }
+    }
     public override void Interact(Character character)
     {
         if (opened == false)
@@ -28,9 +35,7 @@ public class LootContainerInteract : Interactable
         closedChest.SetActive(false);
         openedChest.SetActive(true);
 
-        //AudioManager.instance.Play(onOpenAudio);
-        throw new Exception("To Implement");
-        //character.GetComponent<FurnanceContainerInteractController>().Open(itemContainer, transform);
+        character.GetComponent<ChestContainerInteractController>().Open(itemContainer, transform);
     }
 
     public void Close(Character character) 
@@ -38,9 +43,6 @@ public class LootContainerInteract : Interactable
         opened = false;
         closedChest.SetActive(true);
         openedChest.SetActive(false);
-
-        //AudioManager.instance.Play(onOpenAudio);
-        throw new Exception("To Implement");
-        //character.GetComponent<ItemContainerInteractController>().Close();
+        character.GetComponent<ChestContainerInteractController>().Close();
     }
 }
