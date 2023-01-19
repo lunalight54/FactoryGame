@@ -10,6 +10,7 @@ public class InventoryController : MonoBehaviour
 
     private void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.I)) 
         {
             if (panel.activeInHierarchy == false)
@@ -20,6 +21,7 @@ public class InventoryController : MonoBehaviour
                 Close();
             }
         }
+        
     }
 
     public void Open() 

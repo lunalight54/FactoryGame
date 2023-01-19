@@ -21,6 +21,10 @@ public class CharacterController : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         motionVector = new Vector2(
@@ -42,6 +46,8 @@ public class CharacterController : MonoBehaviour
             animator.SetFloat("lastHorizontal", horizontal);
             animator.SetFloat("lastVertical", vertical);
         }
+        
+        
     }
 
     void FixedUpdate()
@@ -53,4 +59,5 @@ public class CharacterController : MonoBehaviour
     {
         rigidbody2d.velocity = motionVector * speed;
     }
+    
 }

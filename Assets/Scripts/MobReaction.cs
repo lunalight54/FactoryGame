@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static TreeEditor.TreeEditorHelper;
-using static UnityEditor.Progress;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class MobReaction : ToolHit
