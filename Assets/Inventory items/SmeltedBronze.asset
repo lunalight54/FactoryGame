@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f838e39139982241b3545959f03b313, type: 3}
-  m_Name: Smelted Bronze
+  m_Name: SmeltedBronze
   m_EditorClassIdentifier: 
   Name: SmeltedBronze
   stackable: 1

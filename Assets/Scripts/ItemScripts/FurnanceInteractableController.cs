@@ -109,6 +109,11 @@ public class FurnanceInteractableController : Interactable
         workingFurnance.SetActive(false);
     }
 
+    public void setRecipeLest(FurnanceRecipeList recipeList)
+    {
+        furnanceRecipeList = recipeList;
+    }
+
     public Item Production(Item itemToMelt)
     {
         foreach (var recipe in furnanceRecipeList.recipes)
@@ -118,7 +123,6 @@ public class FurnanceInteractableController : Interactable
                 return recipe.output;
             }
         }
-
         return null;
     }
 }
