@@ -34,7 +34,7 @@ public class DayTimeController : MonoBehaviour
         agents = new List<TimeAgent>();
         mobs = hostileMobsANight;
     }
-    private void Start()
+    public void Start()
     {
         time = startAtTime;
     }

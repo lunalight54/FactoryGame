@@ -9,20 +9,16 @@ using TMPro;
 
 public class DayTimeTests
 {
-    [SerializeField] public int some;
-    /*
+
     [UnityTest]
     public IEnumerator CheckIfNight()
     {
-        var dayTimeController = new GameObject().AddComponent<DayTimeController>();
-        var so = new SerializedObject(dayTimeController);
-        
-        TextMeshProUGUI text = new GameObject().AddComponent<TextMeshProUGUI>();
-        so.FindProperty("text").objectReferenceValue = text;
-        so.ApplyModifiedProperties();
-        
-        yield return null;
-        Assert.AreEqual(false ,dayTimeController.IsNight() );
+        var gameObject = new GameObject();
+        var dayTimeController = gameObject.AddComponent<DayTimeController>();
+        dayTimeController.enabled = false;
+        dayTimeController.Start();
+        yield return new WaitForSeconds(0.1f);
+        Assert.AreEqual(false, dayTimeController.IsNight());
     }
-    */
+    
 }
